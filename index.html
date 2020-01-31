@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="wrapper">
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <div class="number">
+                <label for="number1">
+                    First Number:
+                    <input type="number" name="number1" id="number1" value=0 onfocus="this.value=''">
+                </label>
+            </div>
+            <div class="operations">
+                <input type="radio" name="operation" value=+> +
+                <input type="radio" name="operation" value=-> &minus;
+                <input type="radio" name="operation" value="*"> &#8727;
+                <input type="radio" name="operation" value="/"> &#8725; </div>
+            <div class="number">
+                <label for="number2">
+                    Second Number:
+                    <input type="number" name="number2" id="number2" value=0 onfocus="this.value=''">
+                </label>
+            </div>
+            <button id="calculate" onclick=calculate()>Calculate</button>
+            <div class="number">
+                <label for="result">
+                    Result:
+                    <input type="number" name="result" id="result" readonly>
+                </label>
+            </div>
+        </div>
+        <h3>Last 5 results:</h3>
+        <ul id="list-of-results"></ul>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
